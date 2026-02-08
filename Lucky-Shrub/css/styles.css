@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none
+}
+body{
+    background-color: #EDEFEE;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 10% 0 10%;
+    color: white;
+}
+header div, nav li, footer div {
+    margin-top: 0.8vw;
+}
+header{
+    display: flex;
+    gap: 1vw;
+}
+header>div{
+    border-radius: 8px;
+    flex: 1;
+    background-color: darkkhaki;
+    padding: 1rem 0;
+    transition: filter 0.4s ease;
+}
+header>div:hover{
+    filter: brightness(1.08);
+    cursor: pointer;
+}
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header img{
+    width: 32%;
+    height: auto;
+}
+nav{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    background-color: indianred;
+    transition: background-color 0.4s ease;
+    flex: 1;
+    border-radius: 8px;
+    font-size: clamp(12px, 2.5vw, 32px);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+nav li:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+header a{
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    margin: 2vw 0 3.5vw 0;   
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vw;
+    flex: 1 1 200px; 
+    background-color: darkkhaki;
+    border-radius: 8px;
+    padding: 1vw;
+    color: black;
+    transition: box-shadow 0.4s ease-out;
+}
+article:hover{
+    box-shadow: 0 4px 12px 0.2vw rgba(0, 0, 0, 0.4);
+}
+#promo {
+    min-height: 200px;
+    border-radius: 8px;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('../photos/garden1.jpg');
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+#promo>h1{
+    font-size: clamp(16px, 4vw, 36px);
+
+}
+#promo>p{
+    font-size: clamp(12px, 2.5vw, 20px);
+    width: 80%;
+}
+article>h2{
+    font-size: clamp(14px, 3vw, 36px);
+    word-break: break-word;
+    margin-bottom: 1vw;
+}
+article>p{
+    font-size: clamp(10px, 2vw, 18px);
+    margin: 0 0.5vw 0 0.5vw;
+}
+article>img{
+    width: 100%;
+    height: auto;
+    padding-top: 1.3vw;
+    border-top: 0.3vw solid black;
+    margin: 0 auto 2vw auto;
+    display: block;
+}
+footer{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    display: flex;
+    background-color: indianred;
+}
+footer>div{
+    flex: 1;
+    font-size: clamp(10px, 2vw, 18px);
+}
+footer img{
+    width: 15%;
+    height: auto;
+    margin-left: 5vw;
+    margin-bottom: 1vw;
+    display: block;
+}
+footer>div:last-child{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0.5vw 1rem 0 0;
+    border-top: 0.5vw solid white;
+    margin: 1vw 1rem 0 0;
+}
